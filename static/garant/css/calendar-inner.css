@@ -1,0 +1,194 @@
+.calendar-inner {
+    width: 378px;
+    margin: 0 auto;
+    padding: 24px 34px;
+    font-size: 16px;
+    background-color: #FFFFFF;
+}
+
+.calendar-inner .head {
+    height: 28px;
+    background-color: #005FA8;
+    border-right: 1px solid #7FAFD3;
+    border-bottom: 1px solid #7FAFD3;
+    border-left: 1px solid #7FAFD3;
+    position: relative;
+}
+
+.calendar-inner .head a {
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.calendar-inner .head .control {
+    display: block;
+    width: 10px;
+    height: 16px;
+    margin-top: -8px;
+    position: absolute;
+    text-decoration: none !important;
+    top: 50%;
+    z-index: 16;
+}
+
+.calendar-inner .head .control img {
+    display: block;
+    filter: none;
+}
+
+.calendar-inner .head .left {
+    left: 16px;
+}
+
+.calendar-inner .head .right {
+    right: 16px;
+}
+
+.calendar-inner .head .box-month-year {
+    width: 250px;
+    margin: 0px auto;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    top: 6px;
+}
+
+.calendar-inner .head .box-month-year img {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.calendar-inner .head .box-month-year a.month {
+    display: inline-block;
+    margin: 0 30px 0 5px;
+}
+
+.calendar-inner .head .box-month-year a.year {
+    display: inline-block;
+    margin: 0 5px 0 0;
+}
+
+.calendar-inner .head .box-month-year .select-month {
+    display: none;
+    width: 86px;
+    padding: 0px;
+    text-align: center;
+    background-color: #005FA8;
+    text-transform: none;
+    position: absolute;
+    left: 30px;
+    top: 22px;
+    z-index: 11;
+}
+
+.calendar-inner .head .box-month-year .select-month span {
+    display: block;
+    margin: 0px;
+    padding: 4px 5px;
+    border-bottom: 1px solid #669FCB;
+}
+
+.calendar-inner .head .box-month-year .select-month span a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 15px !important;
+    font-weight: normal !important;
+    cursor: pointer;
+}
+
+.calendar-inner .head .box-month-year .select-year {
+    display: none;
+    width: 56px;
+    padding: 0px;
+    text-align: center;
+    background-color: #005FA8;
+    text-transform: none;
+    position: absolute;
+    right: 30px;
+    top: 22px;
+    z-index: 11;
+}
+
+.calendar-inner .head .box-month-year .select-year span {
+    display: block;
+    margin: 0px;
+    padding: 4px 5px;
+    border-bottom: 1px solid #669FCB;
+}
+
+.calendar-inner .head .box-month-year .select-year span a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 15px !important;
+    font-weight: normal !important;
+    cursor: pointer;
+}
+
+.calendar-inner .body {}
+
+.calendar-inner .body a {
+    color: #000000;
+}
+
+.calendar-inner .body table {
+    border-collapse: collapse;
+    border: none !important;
+    color: #265699;
+    margin-left: -17px;
+    width: 412px;
+}
+
+.calendar-inner .body table tr,
+.calendar-inner .body table td {
+    border: none !important;
+}
+
+.calendar-inner .body table td {
+    width: 47px;
+    height: 36px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.calendar-inner .body table td span.selected-date {
+    display: inline-block;
+    border: 1px #265699 solid;
+    background-color: #265699;
+    color: #FFFFFF;
+    padding: 9px 16px;
+}
+
+.calendar-inner .body table td span.active-date {
+    display: inline-block;
+    border: 1px #A9B7C5 solid;
+    padding: 9px 16px;
+}
+
+.calendar-inner .body table td span.today-date {
+    display: inline-block;
+    border: 1px solid #E5EFF6;
+    padding: 8px 11px;
+}
+
+.calendar-inner .body table a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+.calendar-inner .body table strong {
+    font-weight: normal;
+    color: #CF1E26;
+}
+
+.calendar-inner .body table .past-date {
+    color: #7E7D7D;
+}
+
+.calendar-inner .body table tr.week td {
+    color: #7E7D7D;
+    padding: 8px 6px 10px 6px;
+}
